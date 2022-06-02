@@ -1,8 +1,8 @@
 #include <stdio.h>
 
 /**
- * display the phrase without using printf
- * Return: 0 if exited properly, non-zero otherwise
+ * main - display the phrase without using printf
+ * Return 0 - to exit properly
  */
 int main(void)
 {
