@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 /**
- * main - display the phrase without using printf
+ * main: display the phrase without using printf
  * Return: 0 to exit properly
  */
 int main(void)
