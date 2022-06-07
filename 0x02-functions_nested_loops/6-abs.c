@@ -11,7 +11,7 @@ int _abs(int n)
 	if(print_sign(n) == '-')
 	{
 		x = n*(-1);
-		_puthchar (x);
+		_putchar (x);
 	}
 	else
 	{
