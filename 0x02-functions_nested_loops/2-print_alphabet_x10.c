@@ -5,11 +5,14 @@
 
 void print_alphabet_x10(void)
 {
-	for (int i = 0; i <= 9; i++)
+	int i, j;
+
+	for (i = 0; i <= 9; i++)
 	{
-		for (int j = 97; j <= 122; j++)
+		for (j = 97; j <= 122; j++)
 		{
 			_putchar (j);
 		}
 	}
+	_putchar('\n');
 }
