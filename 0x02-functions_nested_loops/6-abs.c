@@ -1,10 +1,10 @@
 #include "main.h"
 /**
  * _abs - absolute number
- * @int: place holder of integer
+ * @n: place holder of integer
  */
 
-int _abs(int)
+int _abs(int n)
 {
 	int x;
 
