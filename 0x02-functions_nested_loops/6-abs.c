@@ -2,7 +2,7 @@
 /**
  * _abs - absolute number
  * @n: place holder of integer
- * return: n return the result
+ * Return: n return the result
  */
 
 int _abs(int n)
@@ -13,7 +13,7 @@ int _abs(int n)
 	}
 	else
 	{
-		n=n;
+		n = n;
 	}
 	return (n);
 }
