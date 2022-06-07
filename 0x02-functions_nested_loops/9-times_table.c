@@ -13,7 +13,7 @@ for (i = 0; i < 10; i++)
 	{
 		k = i * j;
 		_putchar ((k / 10) + '0' );
-		_putchar ((k % 10) + '0' );
+		_putchar ((k % 10) );
 		if (j != 9)
 		{
 			if (k < 10)
