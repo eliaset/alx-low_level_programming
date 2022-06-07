@@ -28,6 +28,7 @@ for (i = 0; i < 10; i++)
 				_putchar (',');
 				_putchar (' ');
 			}
+		}
 		else
 		{
 			_putchar ((k / 10) + '0' );
