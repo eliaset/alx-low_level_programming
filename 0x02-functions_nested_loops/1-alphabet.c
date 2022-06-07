@@ -1,4 +1,4 @@
-#include <stdio.h>
+#include "main.h"
  /** 
   * print_alphabet - function from user
   * Return: 0 exit code
@@ -9,8 +9,8 @@ void print_alphabet(void)
 
 	for (i = 97; i <= 122; i++)
 	{
-		putchar (i);
-		putchar ('\n');
+		_putchar (i);
+		_putchar ('\n');
 	}
 }
 int main(void)
