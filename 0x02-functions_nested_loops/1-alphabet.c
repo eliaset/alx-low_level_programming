@@ -1,19 +1,16 @@
 #include "main.h"
-/**
- * print_alphabet - Entry point
- *
- * Return: Always 0 (Success)
- */
+ /**
+  * print_alphabet - function from user
+  * Return: 0 exit code
+  */
 void print_alphabet(void)
 {
-	int alpha;
+        int i;
 
-	alpha = 'a';
-
-	while (alpha <= 'z')
-	{
-		_putchar(alpha);
-		alpha++;
-	}
-	_putchar('\n');
+        for (i = 97; i <= 122; i++)
+        {
+                _putchar (i);
+                _putchar ('\n');
+        }
+        _putchar('\n');
 }
