@@ -15,7 +15,7 @@ int i, j, k;
 			k = i * j;
 			_putchar (k / 10);
 			_putchar (k % 10);
-			if (i != 9 || j != 9)
+			if (i != 9 && j != 9)
 			{
 				_putchar (',');
 				_putchar (' ');
