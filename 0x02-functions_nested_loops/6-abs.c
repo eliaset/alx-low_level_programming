@@ -2,6 +2,7 @@
 /**
  * _abs - absolute number
  * @n: place holder of integer
+ * return: n return the result
  */
 
 int _abs(int n)
@@ -9,10 +10,10 @@ int _abs(int n)
 	if (n < 0)
 	{
 		n = n * (-1);
-		_putchar (n);
 	}
 	else
 	{
-		_putchar (n);
+		n=n;
 	}
+	return (n);
 }
