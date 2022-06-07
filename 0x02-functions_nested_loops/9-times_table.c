@@ -14,8 +14,11 @@ for (i = 0; i < 10; i++)
 		k = i * j;
 		_putchar ((k / 10) + '0');
 		_putchar ((k % 10) + '0');
-		_putchar (',');
-		_putchar (' ');
+		if (i != 9 & j != 9)
+		{
+			_putchar (',');
+			_putchar (' ');
+		}
 	}
 	_putchar ('\n');
 }
