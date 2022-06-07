@@ -25,6 +25,6 @@ int main(void)
 		}
 	}
 	sum = sum3 + sum5;
-	printf("%l\n", sum);
+	printf("%i\n", sum);
 	return (0);
 }
