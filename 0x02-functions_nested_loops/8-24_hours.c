@@ -1,12 +1,10 @@
 #include "main.h"
 
 /**
- * print_last_digit - prints the last digit
- * @n: the int place holder
- * Return: exit the code
+ * jack_bauer - prints 24 hours and minute
  */
 
-int print_last_digit(int n)
+void jack_bauer(void)
 {
 	for (i = 00; i < 24; i++)
 	{
