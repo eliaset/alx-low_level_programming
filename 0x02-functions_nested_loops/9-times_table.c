@@ -29,7 +29,7 @@ for (i = 0; i < 10; i++)
 				_putchar (' ');
 			}
 		}
-		else if (i == 0 && j ==9}
+		else if (i == 0 && j ==9)
 		{
 			_putchar (k + '0');
 		}
