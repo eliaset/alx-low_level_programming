@@ -1,56 +1,32 @@
-/*
-Main.h
-Written by Matthew Fisher
+#ifndef _MAIN_H_
+#define _MAIN_H_
 
-Main.h is included by all source files and includes every header file in the correct order.
-*/
-#pragma once
+#include <stdarg.h>
+/**
+ * struct print - structure for printing various types
+ * @t: type to print
+ * @f: function to print
+ */
+typedef struct print
+{
+	char *t;
+	int (*f)(va_list);
+} print_t;
 
-//
-// Config.h includes a series of #defines used to control compiling options
-//
-#include "Config.h"
+int _putchar(char c);
+int _printf(const char *format, ...);
+int print_c(va_list c);
+int print_s(va_list s);
+int print_i(va_list i);
+int print_d(va_list d);
+int print_u(va_list u);
+int print_b(va_list b);
+int print_o(va_list o);
+int print_x(va_list x);
+int print_X(va_list X);
+int print_p(va_list p);
+int print_S(va_list S);
+int print_r(va_list r);
+int print_R(va_list R);
 
-//
-// Engine.h includes everything that rarely changes between applications, such as vector/Matrix4 libraries,
-// OpenGL/DirectX graphics devices, software rasterizers, etc.
-//
-#include "Engine.h"
-
-#include "Constants.h"
-
-#include "BaseCodeDLL.h"
-
-#include "AppParameters.h"
-
-#include "Enums.h"
-
-#include "CardDatabase.h"
-#include "GameData.h"
-
-#include "State.h"
-#include "BuyAgenda.h"
-#include "Player.h"
-#include "TestChamber.h"
-#include "MetaTestChamber.h"
-#include "AIUtility.h"
-
-#include "Event.h"
-#include "EventBase.h"
-#include "EventIntrigue.h"
-#include "EventSeaside.h"
-#include "EventAlchemy.h"
-#include "EventProsperity.h"
-#include "EventCustom.h"
-
-#include "CardEffect.h"
-#include "CardEffectBase.h"
-#include "CardEffectIntrigue.h"
-#include "CardEffectSeaside.h"
-#include "CardEffectAlchemy.h"
-#include "CardEffectProsperity.h"
-#include "CardEffectCustom.h"
-
-#include "DominionGame.h"
-
-#include "App.h"
+#endif  /* _MAIN_H */
