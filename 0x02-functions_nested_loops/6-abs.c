@@ -4,7 +4,7 @@
  * @n: place holder
  */
 
-int _abs(int)
+int _abs(int n)
 {
 	int x;
 
