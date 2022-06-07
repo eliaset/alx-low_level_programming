@@ -13,7 +13,6 @@ int _abs(int)
 		x = n*(-1);
 		_puthchar (x);
 	}
-	
 	else
 	{
 		x = n;
