@@ -1,16 +1,16 @@
 #include "main.h"
 /**
- * abs - absolute number
- * @n: place holder
+ * _abs - absolute number
+ * @int: place holder of integer
  */
 
-int _abs(int n)
+int _abs(int)
 {
 	int x;
 
-	if(print_sign(n) == '-')
+	if (n < 0)
 	{
-		x = n*(-1);
+		x = n * (-1);
 		_putchar (x);
 	}
 	else
