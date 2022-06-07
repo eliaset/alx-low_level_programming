@@ -1,8 +1,8 @@
 #include "main.h"
 /**
  * _islower - check if alphabet is lower case
- * c - place holder
- *Return: 0 1 to exit
+ * @c: place holder
+ * Return: 0 or 1 to exit
  *
  */
 
