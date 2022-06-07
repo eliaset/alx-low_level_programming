@@ -12,8 +12,9 @@ int i, j, k;
 	{
 		for (j = 0; j < 10; j++)
 		{
-			k = i * j;
-			_putchar (k);
+			k = i*j;
+			_putchar (k / 10);
+			_putchar (k % 10);
 			if (i != 9 || j != 9)
 			{
 				_putchar (',');
