@@ -3,7 +3,6 @@
 /**
 * times_table - multiplication
 */
- 
 void times_table(void)
 {
 int i, j, k;
