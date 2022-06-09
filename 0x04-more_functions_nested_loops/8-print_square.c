@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * print_diagonal - print n side square
+ * print_square - print n side square
  * @size: number of square size
  */
 
