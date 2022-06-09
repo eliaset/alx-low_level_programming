@@ -3,7 +3,8 @@
 /**
  * print_triangle - prints a triangle
  * @size: numbers of line
- */
+ * Return: no return.
+ */ 
 void print_triangle(int size)
 {
 	int i, j;
