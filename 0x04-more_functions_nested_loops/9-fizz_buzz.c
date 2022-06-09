@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 /**
- * main - prints Buzz, Fizz, or FizzBuzz 
+ * main - prints Buzz, Fizz, or FizzBuzz
  * for multiple of 3 and 5 and 3*5.
  * Return: 0 to exit
  */
