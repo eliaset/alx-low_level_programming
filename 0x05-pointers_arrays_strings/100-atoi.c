@@ -11,6 +11,7 @@ int _atoi(char *s)
 	int c = 0;
 	int d = 0;
 	int e = 0;
+	int i;
 	int n = 0;
 	int m = 0;
 
@@ -18,7 +19,7 @@ int _atoi(char *s)
 	{
 		c++;
 	}
-	for (int i = 0; i < c; i++)
+	for (i = 0; i < c; i++)
 	{
 		if (s[i] == '-')
 		{
