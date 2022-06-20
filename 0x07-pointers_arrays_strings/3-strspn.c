@@ -7,10 +7,8 @@
  */
 unsigned int _strspn(char *s, char *accept)
 {
-	int i;
-	int j;
-	int c;
-	int n = 0;
+	unsigned int i, j, c, n;
+	n = 0;
 
 	for (i = 0; i < accept[i] != '\0'; i++)
 	{
@@ -23,10 +21,10 @@ unsigned int _strspn(char *s, char *accept)
 				c = 1;
 			}
 		}
-		if (c == 1)
+		if (c == 0)
 		{
 			return (n);
 		}
 	}
-	return (0);
+	return (n);
 }
