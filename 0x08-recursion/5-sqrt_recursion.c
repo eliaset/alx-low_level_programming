@@ -2,8 +2,11 @@
 /**
  * _sqrt_recursion -  Returns the natural square root of a number.
  * @n: int type
+ * @i: int type
  * Return: char type
  **/
+int sq(int n, int i);
+
 int _sqrt_recursion(int n)
 {
 	return (sq(n, 0));
