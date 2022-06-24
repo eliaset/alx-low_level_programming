@@ -1,5 +1,5 @@
 #include "main.h"
-#include <stdio.h>"
+#include <stdio.h>
 /**
  * main - prints number of arguments
  * @argc: number of arguments typed
@@ -8,6 +8,6 @@
  */
 int main(int argc, char *argv[])
 {
-	printf("%d\n", argc);
+	printf("%d\n", argc - 1);
 	return (0);
 }
