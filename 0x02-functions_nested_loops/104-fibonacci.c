@@ -18,11 +18,11 @@ int main(void)
 	{
 		if (i == 1)
 		{
-			printf("%lld", j);
-		} 
+			printf("%ld", j);
+		}
 		else
 		{
-			printf(", %lld", j);
+			printf(", %ld", j);
 		}
 		n = j + k;
 		j = k;
