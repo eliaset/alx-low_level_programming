@@ -34,8 +34,8 @@ int main(void)
 	n2 = n % 10000000000;
 	for (i = 91; i <= 98; i++)
 	{
-		printf(", %lu", j1);
-		printf("%lu", j2);
+		printf(", %lu", j1  + (j2 / 1000000000));
+		printf("%lu", j2 % 1000000000);
 		n1 = k1 + j1;
 		j1 = k1;
 		k1 = n1;
