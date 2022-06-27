@@ -7,7 +7,7 @@
  */
 int main(void)
 {
-	long long int i, j, k, n;
+	long int i, j, k, n;
 
 	j = 1;
 
@@ -17,10 +17,10 @@ int main(void)
 	{
 		if (i == 1)
 		{
-			printf("%lld", j);
+			printf("%ld", j);
 		} else
 		{
-			printf(", %lld", j);
+			printf(", %ld", j);
 		}
 		n = j + k;
 		j = k;
