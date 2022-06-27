@@ -26,6 +26,6 @@ int main(void)
 		j = k;
 		k = n;
 	}
-
+	printf("\n");
 	return (0);
 }
