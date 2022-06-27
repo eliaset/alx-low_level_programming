@@ -12,7 +12,7 @@ int main(void)
 
 	j = 1;
 	k = 2;
-	for (i = 1; i <= 90; i++)
+	for (i = 1; i < 91; i++)
 	{
 		if (i == 1)
 		{
@@ -32,7 +32,7 @@ int main(void)
 	k2 = k % 10000000000;
 	n1 = n / 10000000000;
 	n2 = n % 10000000000;
-	for (i = 91; i <= 98; i++)
+	for (i = 92; i < 99; i++)
 	{
 		printf(", %lu", j1);
 		printf("%lu", j2);
