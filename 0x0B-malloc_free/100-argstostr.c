@@ -2,44 +2,44 @@
 #include <stdio.h>
 #include <stdlib.h>
 /**
- * argstotmp - prints args
- * @ac: takes in width of grid
- * @av: height of grid
- * Return: the args one line at a time
+ * *argstotmp - concatenates all the arguments of the program
+ * @ac: number of arguments
+ * @av: array of arguments
+ *
+ * Return: Pointer to the new tmping (Success), NULL (Error)
  */
-
 char *argstotmp(int ac, char **av)
 {
+	int i, j, k, l;
 	char *tmp;
-	int count = 0, a = 0, b = 0, c = 0;
 
 	if (ac == 0 || av == NULL)
 		return (NULL);
-	while (a < ac)
+
+	for (i = 0; i < ac; i++)
 	{
-		b = 0;
-		while (av[a][b] != '\0')
-		{
-			count++;
-			b++;
-		}
-		a++;
+		for (j = 0; av[i][j] != '\0'; j++)
+			l++;
+		l++;
 	}
-	count = count + ac + 1;
-	tmp = malloc(sizeof(char) * count);
+
+	tmp = malloc(sizeof(char) * (l + 1));
+
 	if (tmp == NULL)
-	{
 		return (NULL);
-	}
-	for (a = 0; a < ac; a++)
+
+	k = 0;
+
+	for (i = 0; i < ac; i++)
 	{
-		for (b = 0; av[a][b] != '\0'; b++)
+		for (j = 0; av[i][j] != '\0'; j++)
 		{
-			tmp[c] = av[a][b];
-			c++;
+			tmp[k] = av[i][j];
+			k++;
 		}
-		tmp[c] = '\n';
-		c++;
+		tmp[k] = '\n';
+		k++;
 	}
+
 	return (tmp);
 }
