@@ -22,9 +22,8 @@ char *create_array(unsigned int size, char c)
 			tmp[i] = c;
 		}
 		return (tmp);
-		free(tmp);
 	}
-	else if (size == 0 || size == 1)
+	else if (size == 0)
 	{
 		return ('\0');
 	}
