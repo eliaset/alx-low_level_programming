@@ -39,17 +39,11 @@ char *str_concat(char *s1, char *s2)
 	}
 	tmp = malloc(sizeof(char) * (k + l) + 1);
 	if (tmp == NULL)
-	{
 		return (NULL);
-	}
 	for (i = 0; i < k; i++)
-	{
 		tmp[i] = s1[i];
-	}
 	for (j = 0; s2[j] != '\0'; j++)
-	{
 		tmp[i + j] = s2[j];
-	}
 	tmp[i + j] = '\0';
 	return (tmp);
 	free(tmp);
