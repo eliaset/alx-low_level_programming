@@ -5,7 +5,6 @@
 /**
  * _strdup - creates an array of chars
  * @str: string to be copied
- * 
  * Return: value of NULL.
  */
 
@@ -21,7 +20,7 @@ char *_strdup(char *str)
 	}
 	if (j > 0)
 	{
-		tmp = malloc(sizeof(char) * j);
+		tmp = malloc(sizeof(str) * j);
 		if (str == NULL)
 		{
 			return ('\0');
