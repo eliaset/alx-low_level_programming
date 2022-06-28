@@ -8,7 +8,6 @@
  *
  * Return: pointer to the new string created (Success), or NULL (Error)
  */
-
 char *str_concat(char *s1, char *s2)
 {
 	int i, j, k, l;
@@ -16,25 +15,45 @@ char *str_concat(char *s1, char *s2)
 
 	k = 0;
 	l = 0;
-
-	while (s1[k] != '\0')
+	if (s1 == NULL)
 	{
-		k++;
+		k = 0;
 	}
-	while (s2[l] != '\0')
+	else
 	{
-		l++;
+		while (s1[k] != '\0')
+		{
+			k++;
+		}
 	}
-	tmp = malloc(sizeof(char) * (k + l) + 2);
-	for (i = 0; i < k; i++)
+	if (s2 == NULL)
 	{
-		tmp[i] = s1[i];
+		l = 0;
 	}
-	for (j = 0; s2[j] != '\0'; j++)
+	else
 	{
-		tmp[i + j] = s2[j];
+		while (s2[l] != '\0')
+		{
+			l++;
+		}
 	}
-	tmp[i + j] = '\0';
-	return (tmp);
-	free(tmp);
+	tmp = malloc(sizeof(char) * (k + l) + 1);
+	if (s1 == NULL && s2 == NULL)
+	{
+		printf("\n");
+	}
+	else
+	{
+		for (i = 0; i < k; i++)
+		{
+			tmp[i] = s1[i];
+		}
+		for (j = 0; s2[j] != '\0'; j++)
+		{
+			tmp[i + j] = s2[j];
+		}
+		tmp[i + j] = '\0';
+		return (tmp);
+		free(tmp);
+	}
 }
