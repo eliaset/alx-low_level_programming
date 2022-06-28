@@ -4,7 +4,7 @@
 
 char *_strdup(char *str)
 {
-	int i, j;
+	unsigned int i, j;
 	char *tmp;
 
 	j = 0;
@@ -17,7 +17,7 @@ char *_strdup(char *str)
 		tmp = malloc(sizeof(char) * j);
 		if (tmp == NULL)
 		{
-			return ('\n');
+			return ('\0');
 		}
 		else
 		{
