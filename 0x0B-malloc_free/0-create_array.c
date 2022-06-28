@@ -23,14 +23,10 @@ char *create_array(unsigned int size, char c)
 		}
 		else
 		{
-			return (tmp);
-			free(tmp);
-		}
-		for (i = 0; i < size; i++)
-		{
 			tmp[i] = c;
 		}
 		return (tmp);
+		free(tmp);
 	}
 	else
 	{
