@@ -1,6 +1,5 @@
-#include "dog.h"
 #include <stdlib.h>
-
+#include "doh.h"
 /**
  * new_dog - creates a new dog.
  * @name: name of the dog.
@@ -12,42 +11,42 @@
  */
 dog_t *new_dog(char *name, float age, char *owner)
 {
-	dog_t *p_dog;
-	int i, lname, lowner;
+	dog_t *tmp;
+	int i, nn, no;
 
-	p_dog = malloc(sizeof(*p_dog));
-	if (p_dog == NULL || !(name) || !(owner))
+	tmp = malloc(sizeof(*tmp));
+	if (tmp == NULL || !(name) || !(owner))
 	{
-		free(p_dog);
+		free(tmp);
 		return (NULL);
 	}
 
-	for (lname = 0; name[lname]; lname++)
+	for (nn = 0; name[nn]; nn++)
 		;
 
-	for (lowner = 0; owner[lowner]; lowner++)
+	for (no = 0; owner[no]; no++)
 		;
 
-	p_dog->name = malloc(lname + 1);
-	p_dog->owner = malloc(lowner + 1);
+	tmp->name = malloc(nn + 1);
+	tmp->owner = malloc(no + 1);
 
-	if (!(p_dog->name) || !(p_dog->owner))
+	if (!(tmp->name) || !(tmp->owner))
 	{
-		free(p_dog->owner);
-		free(p_dog->name);
-		free(p_dog);
+		free(tmp->owner);
+		free(tmp->name);
+		free(tmp);
 		return (NULL);
 	}
 
-	for (i = 0; i < lname; i++)
-		p_dog->name[i] = name[i];
-	p_dog->name[i] = '\0';
+	for (i = 0; i < nn; i++)
+		tmp->name[i] = name[i];
+	tmp->name[i] = '\0';
 
-	p_dog->age = age;
+	tmp->age = age;
 
-	for (i = 0; i < lowner; i++)
-		p_dog->owner[i] = owner[i];
-	p_dog->owner[i] = '\0';
+	for (i = 0; i < no; i++)
+		tmp->owner[i] = owner[i];
+	tmp->owner[i] = '\0';
 
-	return (p_dog);
+	return (tmp);
 }
