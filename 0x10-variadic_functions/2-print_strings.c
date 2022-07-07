@@ -3,13 +3,11 @@
 #include "variadic_functions.h"
 
 /**
- * print_sings - prints sings.
- * @separator: sing to be printed between the sings.
- * @n: number of sings passed to the function.
- *
- * Return: no return.
+ * print_strings - prints strings
+ * @separator: separator between strings
+ * @n: number of arguments
  */
-void print_sings(const char *separator, const unsigned int n, ...)
+void print_strings(const char *separator, const unsigned int n, ...)
 {
 	va_list ap;
 	unsigned int i;
