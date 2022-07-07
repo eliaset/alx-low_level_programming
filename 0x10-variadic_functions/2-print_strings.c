@@ -20,7 +20,6 @@ void print_sings(const char *separator, const unsigned int n, ...)
 	for (i = 0; i < n; i++)
 	{
 		s = va_arg(ap, char *);
-
 		if (s != NULL)
 			printf("%s", s);
 		else
