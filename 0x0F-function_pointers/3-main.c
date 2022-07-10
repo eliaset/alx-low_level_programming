@@ -12,7 +12,7 @@
 int main(int argc, char *argv[])
 {
 	int a, b;
-	char op;
+	char *op;
 	int (*cal)(int, int);
 
 	if (argc != 4)
@@ -26,13 +26,13 @@ int main(int argc, char *argv[])
 	op = argv[2];
 	cal = get_op_func(op);
 
-	if (cal == NULL || op != '\0')
+	if (cal == NULL || op[1] != '\0')
 	{
 		printf("Error\n");
 		exit(99);
 	}
 
-	if ((op == '/' && b == 0) || (op == '%' && b == 0))
+	if ((*op == '/' && b == 0) || (*op == '%' && b == 0))
 	{
 		printf("Error\n");
 		exit(100);
