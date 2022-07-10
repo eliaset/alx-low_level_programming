@@ -39,8 +39,6 @@ int main(int argc, char *argv[])
 		printf("Error\n");
 		exit(100);
 	}
-
-	printf("%d\n", func(a, b));
-
+	printf("%d\n", cal(a, b));
 	return (0);
 }
