@@ -36,7 +36,12 @@ int main(int argc, char *argv[])
 
 	a = atoi(argv[1]);
 	b = atoi(argv[3]);
-
+	if (b == 0 && (argv[2] == '/' || argv[2] == '%'))
+	{
+		printf("Error\n");
+		exit(100);
+	}
+	
 	printf("%d\n", cal(a, b));
 	return (0);
 }
