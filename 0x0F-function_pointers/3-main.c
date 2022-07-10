@@ -12,7 +12,7 @@
 int main(int argc, char *argv[])
 {
 	int a, b, result;
-	char o;
+	char op;
 	int (*func)(int, int);
 
 	if (argc != 4)
@@ -32,9 +32,9 @@ int main(int argc, char *argv[])
 		exit(99);
 	}
 
-	o = *argv[2];
+	op = *argv[2];
 
-	if ((o == '/' || o == '%') && b == 0)
+	if ((op == '/' || op == '%') && b == 0)
 	{
 		printf("Error\n");
 		exit(100);
