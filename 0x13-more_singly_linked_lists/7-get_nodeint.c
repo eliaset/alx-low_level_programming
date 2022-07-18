@@ -11,16 +11,15 @@
  */
 listint_t *get_nodeint_at_index(listint_t *head, unsigned int index)
 {
-	listint_t *tmp;
 	unsigned int c = 0;
 
 	while (head != NULL && i < index)
 	{
 		head = head->next;
 		c++;
-		if (c == index)
-			return (head);
+		if (head == NULL)
+			return (NULL);
 	}
-	return (NULL);
+	return (head);
 
 }
