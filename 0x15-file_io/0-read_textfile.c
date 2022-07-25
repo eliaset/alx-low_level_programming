@@ -23,8 +23,7 @@ ssize_t read_textfile(const char *filename, size_t letters)
 		return (0);
 	read(fd, buf, letters);
 	buf[letters] = '\0';
-	close(fd);
-
+	
 	while (buf[n] != 0)
 	{
 		if (buf[n] != 32)
@@ -34,6 +33,7 @@ ssize_t read_textfile(const char *filename, size_t letters)
 		n++;
 	}
 
+	close(fd);
 	free(buf);
 	return (m);
 }
