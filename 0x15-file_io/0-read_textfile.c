@@ -25,12 +25,6 @@ ssize_t read_textfile(const char *filename, size_t letters)
 	buf[letters] = '\0';
 	close(fd);
 
-	fd = open(filename, O_CREAT | O_WRONLY);
-	if (fd == -1)
-		return (0);
-	write(fd, filename, letters);
-	close(fd);
-
 	while (buf[n] != 0)
 	{
 		if (buf[n] != 32)
