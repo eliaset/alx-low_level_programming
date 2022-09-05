@@ -1,1 +1,1 @@
-c 18
+Alx no kill me biko
